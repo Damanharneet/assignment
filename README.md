@@ -41,6 +41,50 @@ Make sure you have Node.js and npm installed on your machine.
 2. Navigate to Project Directory  
    cd ecomm
 3. Run the application
+   ```bash
    npm start
 
+### Project Structure
 
+|-- src/
+|    |-- assets/
+|        |-- css/
+|            |-- style.css
+|   |-- components/
+|       |-- Product.js
+|       |-- Cart.js
+|       |-- Layout.js
+|   |-- containers/
+|       |-- CartItems.js
+|       |-- Navbar.js
+|       |-- Pagination.js
+|       |-- ProductCard.js
+|       |-- Star.js
+|       |-- TopOfferBar.js
+|   |-- Redux/
+|       |-- actions/
+|           |-- cart.action.js
+|           |-- index.js
+|           |-- product.action.js
+|       |-- reducers/
+|           |-- cart.reducer.js
+|           |-- index.js
+|           |-- product.reducer.js
+|       |-- constants/
+|           |-- index.js
+|   |-- App.js
+|   |-- index.js
+|-- public/
+|-- package.json
+|-- README.md
+
+### Usuage
+Usage
+Product Page:
+Navigate to the "Products" page to view a list of available products.
+Click on a product to add to Cart.
+
+Cart Page:
+
+Visit the "Cart" page to manage your shopping cart.
+Add products, increment, decrement, and remove items from the cart.
