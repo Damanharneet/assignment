@@ -48,32 +48,32 @@ Make sure you have Node.js and npm installed on your machine.
 
 |-- src/
 |   |-- assets/
-|       |-- css/
-|           |-- style.css
+|   |   |-- css/
+|   |   |   |-- style.css
 |   |-- components/
-|       |-- Product.js
-|       |-- Cart.js
-|       |-- Layout.js
+|   |   |-- Product.js
+|   |   |-- Cart.js
+|   |   |-- Layout.js
 |   |-- containers/
-|       |-- CartItems.js
-|       |-- Navbar.js
-|       |-- Pagination.js
-|       |-- ProductCard.js
-|       |-- Star.js
-|       |-- TopOfferBar.js
+|   |   |-- CartItems.js
+|   |   |-- Navbar.js
+|   |   |-- Pagination.js
+|   |   |-- ProductCard.js
+|   |   |-- Star.js
+|   |   |-- TopOfferBar.js
 |   |-- Redux/
-|       |-- actions/
-|           |-- cart.action.js
-|           |-- index.js
-|           |-- product.action.js
-|       |-- reducers/
-|           |-- cart.reducer.js
-|           |-- index.js
-|           |-- product.reducer.js
-|       |-- constants/
-|           |-- index.js
-|--|-- App.js
-|--|-- index.js
+|   |   |-- actions/
+|   |   |   |-- cart.action.js
+|   |   |   |-- index.js
+|   |   |   |-- product.action.js
+|   |   |-- reducers/
+|   |   |   |-- cart.reducer.js
+|   |   |   |-- index.js
+|   |   |   |-- product.reducer.js
+|   |   |-- constants/
+|   |   |   |-- index.js
+|-- App.js
+|-- index.js
 |-- public/
 |-- package.json
 |-- README.md
