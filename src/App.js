@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./assets/css/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Products from "./components/Products";
+import Cart from "./components/Cart";
+import { useDispatch } from "react-redux";
+import { getAllProducts, getCartItems } from "./redux/actions";
+import { useEffect } from "react";
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCartItems());
+    dispatch(getAllProducts());
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Layout />
+        <Routes>
+          <Route path="/" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
