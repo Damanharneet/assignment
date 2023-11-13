@@ -47,7 +47,7 @@ Make sure you have Node.js and npm installed on your machine.
 ### Project Structure
 
 |-- src/
-|    |-- assets/
+|   |-- assets/
 |        |-- css/
 |            |-- style.css
 |   |-- components/
@@ -72,8 +72,8 @@ Make sure you have Node.js and npm installed on your machine.
 |           |-- product.reducer.js
 |       |-- constants/
 |           |-- index.js
-|   |-- App.js
-|   |-- index.js
+|--|-- App.js
+|--|-- index.js
 |-- public/
 |-- package.json
 |-- README.md
