@@ -1,4 +1,7 @@
-import { getAllProductsConstant } from "../constants";
+import {
+  getAllProductsConstant,
+  getProductFromServerConstant,
+} from "../constants";
 
 const initState = {
   products: [],
@@ -16,6 +19,17 @@ export default (state = initState, action) => {
       };
       break;
     case getAllProductsConstant.GET_ALL_PRODUCTS_SUCCESS:
+      state = {
+        ...state,
+        products: action.payload,
+      };
+      break;
+    case getProductFromServerConstant.GET_PRODUCT_FROM_SERVER_REQUEST:
+      state = {
+        ...initState,
+      };
+      break;
+    case getProductFromServerConstant.GET_PRODUCT_FROM_SERVER_SUCCESS:
       state = {
         ...state,
         products: action.payload,

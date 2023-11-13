@@ -47,7 +47,7 @@ const Navbar = (props) => {
                     <NavLink to="/">Home</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">Categories</NavLink>
+                    <NavLink to="/infinteScroll">Infinite Scroll</NavLink>
                   </li>
                   <li>
                     <NavLink to="/">Shop</NavLink>

@@ -15,6 +15,9 @@ const Products = (props) => {
   const [totalProduct, setTotalProduct] = useState();
 
   useEffect(() => {
+    dispatch(getAllProducts());
+  }, []);
+  useEffect(() => {
     if (productsState) {
       setProducts(productsState);
       setTotalProduct(productsState.length);

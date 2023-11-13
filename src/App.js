@@ -8,11 +8,12 @@ import Cart from "./components/Cart";
 import { useDispatch } from "react-redux";
 import { getAllProducts, getCartItems } from "./redux/actions";
 import { useEffect } from "react";
+import InfiniteScroll from "./components/InfiniteScroll";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCartItems());
-    dispatch(getAllProducts());
+   
   }, []);
 
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/infinteScroll" element={<InfiniteScroll />} />
         </Routes>
       </BrowserRouter>
     </div>
